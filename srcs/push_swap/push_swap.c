@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   push_swap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aevstign <aevstign@student.42.fr>          +#+  +:+       +#+        */
+/*   By: arsenii <arsenii@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 17:44:43 by aevstign          #+#    #+#             */
-/*   Updated: 2024/04/09 17:08:58 by aevstign         ###   ########.fr       */
+/*   Updated: 2024/04/13 15:03:14 by arsenii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	main(int argc, char **argv)
 	if (1 == argc || (2 == argc && !argv[1][0]))
 		return (1);
 	else if (2 == argc)
-		argv = ft_split(argv[1], ' ');
+		argv = split(argv[1], ' ');
 	init_stack(&a, argv + 1, 2 == argc);
 	if (!stack_sorted(a))
 	{
