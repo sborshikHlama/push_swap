@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   stack_utils.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aevstign <aevstign@student.42.fr>          +#+  +:+       +#+        */
+/*   By: arsenii <arsenii@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/12 16:59:48 by aevstign          #+#    #+#             */
-/*   Updated: 2024/04/09 17:06:05 by aevstign         ###   ########.fr       */
+/*   Updated: 2024/04/21 15:24:11 by arsenii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,7 +64,7 @@ void	append_node(t_stack_node **stack, int nbr)
 t_stack_node	*find_min(t_stack_node *stack)
 {
 	long			min;
-	t_stack_node	*min_node = NULL;
+	t_stack_node	*min_node;
 
 	if (!stack)
 		return (NULL);

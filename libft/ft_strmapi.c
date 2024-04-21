@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aevstign <aevstign@student.42.fr>          +#+  +:+       +#+        */
+/*   By: arsenii <arsenii@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/25 15:46:49 by aevstign          #+#    #+#             */
-/*   Updated: 2023/10/28 18:36:23 by aevstign         ###   ########.fr       */
+/*   Updated: 2024/04/21 15:25:00 by arsenii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,22 +31,22 @@ int, char))
 	return (str);
 }
 
-char	ft_toupper_indexed(unsigned int i, char c)
-{
-	if (i % 2 == 0)
-		return (c >= 'a' && c <= 'z') ? c - 'a' + 'A' : c;
-	return c;
-}
+// char	ft_toupper_indexed(unsigned int i, char c)
+// {
+// 	if (i % 2 == 0)
+// 		return (c >= 'a' && c <= 'z') ? c - 'a' + 'A' : c;
+// 	return c;
+// }
 
-int	main(void)
-{
-	char *input = "hello world";
-	char *result = ft_strmapi(input, ft_toupper_indexed);
-	printf("Original: %s\n", input);
-	printf("Transformed: %s\n", result);
+// int	main(void)
+// {
+// 	char *input = "hello world";
+// 	char *result = ft_strmapi(input, ft_toupper_indexed);
+// 	printf("Original: %s\n", input);
+// 	printf("Transformed: %s\n", result);
 
-	// Clean up dynamically allocated memory.
-	free(result);
-	return 0;
+// 	// Clean up dynamically allocated memory.
+// 	free(result);
+// 	return 0;
 
-}
+// }

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: aevstign <aevstign@student.42.fr>          +#+  +:+       +#+        */
+/*   By: arsenii <arsenii@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/28 16:09:25 by aevstign          #+#    #+#             */
-/*   Updated: 2023/10/29 14:49:12 by aevstign         ###   ########.fr       */
+/*   Updated: 2024/04/21 15:24:37 by arsenii          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,16 +39,16 @@ void	print_list(t_list *lst)
 	printf("NULL\n");
 }
 
-int	main(void)
-{
-	t_list *head = NULL;
-	int val1 = 5, val2 = 10, val3 = 15;
+// int	main(void)
+// {
+// 	t_list *head = NULL;
+// 	int val1 = 5, val2 = 10, val3 = 15;
 
-	ft_lstadd_back(&head, ft_lstnew(&val1));
-	ft_lstadd_back(&head, ft_lstnew(&val2));
-	ft_lstadd_back(&head, ft_lstnew(&val3));
+// 	ft_lstadd_back(&head, ft_lstnew(&val1));
+// 	ft_lstadd_back(&head, ft_lstnew(&val2));
+// 	ft_lstadd_back(&head, ft_lstnew(&val3));
 
-	print_list(head);
+// 	print_list(head);
 
-	return (0);
-}
+// 	return (0);
+// }
